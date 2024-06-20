@@ -17,3 +17,14 @@ responses:
     description: "Method Not Allowed"
   500:
     description: "Internal Server Error"
+
+definitions:
+  User:
+    type: "object"
+    properties:
+      user_id:
+        type: "string"
+      users_following:
+        type: "array"
+        items:
+          type: "string"

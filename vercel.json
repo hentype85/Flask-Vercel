@@ -3,7 +3,7 @@
   "builds":
   [
     {
-      "src": "./API/main.py",
+      "src": "./main.py",
       "use": "@vercel/python",
       "config":{"runtime":"python3.11"}
     }
@@ -12,7 +12,7 @@
   [
     {
       "src": "/(.*)",
-      "dest": "/API/main.py"
+      "dest": "/main.py"
     }
   ]
 }
